@@ -9,9 +9,35 @@
 </head>
 
 <body>
-    <table>
+    <style type="text/css">
+        .writing-mode-lr{
+            text-align: center;
+            writing-mode: vertical-lr
+        }
+        .text-center{
+            text-align: center;
+        }
+        table.tableizer-table {
+            font-size: 12px;
+            border: 1px solid rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .tableizer-table td {
+            padding: 4px;
+            margin: 3px;
+            border: 1px solid #CCC;
+        }
+
+        .tableizer-table th {
+            background-color: #104E8B;
+            color: #FFF;
+            font-weight: bold;
+        }
+    </style>
+    <table class="tableizer-table">
         <thead>
-            <tr>
+            <tr class="tableizer-firstrow">
                 <th colspan="12"> 接訂管理要項實績日報表</th>
             </tr>
         </thead>
@@ -30,7 +56,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td colspan="3">管理項目</td>
+                <td colspan="3" class = text-center>管理項目</td>
                 <td>營二處</td>
                 <td>營三處</td>
                 <td>營五處</td>
@@ -42,7 +68,7 @@
                 <td>同奈廠</td>
             </tr>
             <tr>
-                <td rowspan="9">接訂狀況實績</td>
+                <td rowspan="9" class = writing-mode-lr>接訂狀況實績</td>
                 <td rowspan="3">"本月累計接訂量(萬碼)"</td>
                 <td>目標</td>
                 <td>&nbsp;</td>
